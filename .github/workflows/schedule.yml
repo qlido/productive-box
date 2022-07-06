@@ -8,10 +8,9 @@ jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Update gist
         uses: qlido/productive-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 235dc5f5854f690690264405c2bdce8c
-          TIMEZONE: Asia/Korea
+          TIMEZONE: Asia/Seoul
